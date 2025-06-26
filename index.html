@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/translation.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span title="Change Title" id="pageTitle">Welcome to the jQuery Example Page</span></h1>
+        <div class="lang-switch-container">
+            <button class="langSwitch" id="langSwitch" style="margin:10px;">Deutsch</button>
+            <button id="darkModeSwitch" style="margin:10px;">🌙 Darkmode</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>What is jQuery?</h2>
+            <p>
+                jQuery is a fast, small, and feature-rich JavaScript library. It was released in 2006 by John Resig and quickly became one of the most popular tools for web development. jQuery simplifies many common tasks in JavaScript, such as DOM manipulation, event handling, animation, and Ajax, making it easier to create interactive and dynamic web pages.
+            </p>
+        </section>
+        <section>
+            <h2>Why Use jQuery?</h2>
+            <ul>
+                <li><strong>Cross-browser compatibility:</strong> jQuery handles differences between browsers, so your code works everywhere.</li>
+                <li><strong>Simplified syntax:</strong> jQuery lets you write less code to do more. For example, selecting elements and adding effects is much easier than with plain JavaScript.</li>
+                <li><strong>Rich plugin ecosystem:</strong> Thousands of plugins are available for tasks like sliders, galleries, form validation, and more.</li>
+                <li><strong>Ajax made easy:</strong> jQuery makes it simple to load data from servers without reloading the page.</li>
+                <li><strong>Animations and effects:</strong> Easily add fade, slide, and custom animations to your site.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Basic Example</h2>
+            <h3>With jQuery:</h3>
+            <pre><code>
+// Hide a paragraph when a button is clicked
+$("#myButton").click(function() {
+    $("#myParagraph").hide();
+});
+            </code></pre>
+            <h3>With Vanilla JavaScript:</h3>
+            <pre><code>
+// Hide a paragraph when a button is clicked
+document.getElementById("myButton").addEventListener("click", function() {
+    document.getElementById("myParagraph").style.display = "none";
+});
+            </code></pre>
+            <p>
+                This comparison shows how jQuery can make JavaScript tasks shorter and more readable, but the same can be achieved with modern plain JavaScript.
+            </p>
+        </section>
+        <section>
+            <h2>How to Include jQuery</h2>
+            <ol>
+                <li>
+                    <strong>CDN:</strong>  
+                    <code>&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;</code>
+                </li>
+                <li>
+                    <strong>Download:</strong>  
+                    Download the jQuery file from <a href="https://jquery.com/download/" target="_blank">jquery.com</a> and include it in your project.
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Popular jQuery Features</h2>
+            <ul>
+                <li><strong>DOM Manipulation:</strong> Change, add, or remove HTML elements and attributes easily.</li>
+                <li><strong>Event Handling:</strong> Respond to user actions like clicks, mouse movements, and keyboard input.</li>
+                <li><strong>Effects and Animations:</strong> Fade, slide, show/hide elements with simple methods.</li>
+                <li><strong>Ajax:</strong> Load data from servers and update your page without a full reload.</li>
+                <li><strong>Plugins:</strong> Extend jQuery with ready-made solutions for common problems.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Is jQuery Still Relevant?</h2>
+            <p>
+                While modern JavaScript (ES6+) and frameworks like React or Vue have reduced the need for jQuery, it is still widely used in many projects and legacy systems. Its simplicity, reliability, and huge plugin ecosystem make it a valuable tool, especially for beginners or when working with older codebases.
+            </p>
+        </section>
+        <section>
+            <h2>Summary</h2>
+            <ul>
+                <li>jQuery makes JavaScript easier and more accessible.</li>
+                <li>It is great for quick prototyping and adding interactivity to websites.</li>
+                <li>Learning jQuery helps you understand the basics of JavaScript and DOM manipulation.</li>
+            </ul>
+            <p>
+                <strong>Tip:</strong> Even if you move on to modern frameworks, knowing jQuery is still useful for maintaining and understanding many existing websites!
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 <span title="Change Name" id="footerName">Your Name</span></p>
+    </footer>
+</body>
+</html>
