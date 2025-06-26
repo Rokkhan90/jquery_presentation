@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/translation.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span title="Change Title" id="pageTitle">Welcome to the jQuery Example Page</span></h1>
+        <div class="lang-switch-container">
+            <button class="langSwitch" id="langSwitch" style="margin:10px;">Deutsch</button>
+            <button id="darkModeSwitch" style="margin:10px;">🌙 Darkmode</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>This is a simple example page to demonstrate jQuery functionality.</p>
+        <hr>
+        <section>
+            <p id="toggleParagraph">This paragraph can be toggled using jQuery.</p>
+            <button id="toggleButton">Toggle Paragraph</button>
+        </section>
+        <hr>
+        <section>
+            <p id="clickMessage">Click the button to change this text.</p>
+            <button id="changeTextButton">Change Text</button>
+        </section>
+        <hr>
+        <section>
+            <p id="hoverMessage">Hover over this text to see a change.</p>
+            <div class="hover-box" id="hoverBox"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 <span title="Change Name" id="footerName">Your Name</span></p>
+    </footer>
+</body>
+</html>
